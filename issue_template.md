@@ -1,50 +1,49 @@
-## Issue Title
+## Issue Title 🚀
 
-### Description
+### Description 📝
 [Description of the issue you encountered]
 
-### Expected Behavior
+### Expected Behavior 🧭
 [Describe what you expected to happen]
 
-### Actual Behavior
+### Actual Behavior 🐞
 [Describe what actually happened]
 
-### Steps to Reproduce
+### Steps to Reproduce 📝
 1. [Step 1]
 2. [Step 2]
 3. [Step 3]
 ...
 
-### Screenshots / Code Snippets
+### Screenshots / Code Snippets 🖼️
 [If applicable, include relevant screenshots or code snippets]
 
-### Environment Information
+### Environment Information 🌐
 - Operating System: [e.g., Windows 10, macOS Big Sur, Ubuntu 20.04, etc.]
 - Browser (if applicable): [e.g., Chrome 91, Firefox 89, etc.]
 - Device (if applicable): [e.g., iPhone 12, Samsung Galaxy S21, etc.]
 - Software Version (if applicable): [e.g., Node.js 14.17, React 17.0, etc.]
 
-### Additional Context
+### Additional Context ℹ️
 [Provide any additional information or context that may be helpful]
 
-### Reproducibility
+### Reproducibility ✔️
 - [ ] Issue is reproducible
 - [ ] Issue is sporadic and not reproducible
 - [ ] Issue is affecting all users
 - [ ] Issue is affecting a specific group of users
 
-### Priority
+### Priority ⚡
 - [ ] Low
 - [ ] Medium
 - [ ] High
 - [ ] Critical
 
-### Labels
+### Labels 🔖
 [Add any relevant labels, e.g., bug, enhancement, help wanted, etc.]
 
-### Assignees
+### Assignees 👥
 [Assign the issue to relevant team members if known]
 
-### Related Issues / Pull Requests
+### Related Issues / Pull Requests 🔗
 [Link to any related issues or pull requests]
-
