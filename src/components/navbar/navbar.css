@@ -1,0 +1,140 @@
+nav {
+  display: grid;
+  height: 5rem;
+  width: 100vw;
+  background-color: var(--color-primary);
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-bar-toggle-btn {
+  display: none;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  transition: var(--transitions);
+}
+
+.nav-links a:hover {
+  color: var(--color-secundary);
+}
+
+.nav-link-active {
+  position: relative;
+}
+
+.nav-link-active::after {
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--color-primary);
+  position: absolute;
+  left: calc(50% - 0.6rem);
+  transform: rotate(45deg);
+  margin-top: 0.9rem !important;
+}
+
+/* MEDIA QUERIES (medium and small) */
+
+@media screen and (max-width: 1024px) {
+  .nav-bar-toggle-btn {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+  }
+
+  .nav-bar-toggle-btn svg {
+    color: var(--color-gray-100);
+  }
+
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    gap: 0;
+    perspective: 400px;
+  }
+
+  .nav-link-active,
+  .nav-link-active::after {
+    display: none;
+  }
+
+  .nav-links li {
+    height: 4rem;
+    width: 100%;
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    animation: navBarAnimations 600ms ease forwards;
+    transform: rotateX(90deg);
+    opacity: 0;
+    transform-origin: top;
+  }
+
+  .nav-links li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .nav-links li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .nav-links li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+
+  .nav-links li:nth-child(5) {
+    animation-delay: 800ms;
+  }
+
+  .nav-links li:nth-child(6) {
+    animation-delay: 1s;
+  }
+
+  .nav-links li:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+
+
+  .nav-links li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    align-items: center;
+    padding: 1rem 5rem 1rem 3rem;
+  }
+
+  @keyframes navBarAnimations {
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+}
+
+

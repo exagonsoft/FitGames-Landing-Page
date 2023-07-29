@@ -154,35 +154,35 @@ export const testimonials = [
         name: "Diana Ayi",
         quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam facere ea a laboriosam sed? Quod vel voluptates a! Maxime minima cumque aut? In expedita numquam consectetur non officia iusto.",
         job: "Student",
-        avatar: require("./images/avatar1.jpg")
+        avatar: require("../Assets/images/avatar1.jpg")
     },
     {
         id: 2,
         name: "Daniel Vinyo",
         quote: "Harum quaerat hic consequuntur molestias repellat ad quo tenetur vitae rem, labore quisquam? Atque, assumenda rerum this and that odit harum quaerat hic praesentium quisquam quae, enim iste ipsam id repellat.",
         job: "Software Egineer",
-        avatar: require("./images/avatar2.jpg")
+        avatar: require("../Assets/images/avatar2.jpg")
     },
     {
         id: 3,
         name: "Edem Quist",
         quote: "Quaerat hic praesentium consequuntur molestias repellat ad quo tenetur vitae rem, labore quisquam? Atque, assumenda rerum odit harum quaerat hic praesentium quisquam quae, enim iste ipsam id repellat.",
         job: "University Lecturer",
-        avatar: require("./images/avatar3.jpg")
+        avatar: require("../Assets/images/avatar3.jpg")
     },
     {
         id: 4,
         name: "Grace Lavoe",
         quote: "Cupiditate deleniti sint consequuntur molestias repellat ad quo tenetur vitae rem, labore quisquam? Atque, assumenda rerum odit harum quaerat hic praesentium quisquam quae, enim iste ipsam id repellat.",
         job: "Talking Parrot",
-        avatar: require("./images/avatar4.jpg")
+        avatar: require("../Assets/images/avatar4.jpg")
     },
     {
         id: 5,
         name: "Nana Yaa Dankwa",
         quote: "Maxime minima cumque sit amet consectetur adipisicing elit. Praesentium ipsam facere ea a laboriosam sed? Quod vel voluptates a! Maxime minima cumque aut? In expedita numquam consectetur non officia iusto.",
         job: "Pharmacist",
-        avatar: require("./images/avatar5.jpg")
+        avatar: require("../Assets/images/avatar5.jpg")
     }
 ]
 
@@ -266,12 +266,12 @@ export const plans = [
 
 
 
-const Trainer1 = require('./images/trainer1.jpg')
-const Trainer2 = require('./images/trainer2.jpg')
-const Trainer3 = require('./images/trainer3.jpg')
-const Trainer4 = require('./images/trainer4.jpg')
-const Trainer5 = require('./images/trainer5.jpg')
-const Trainer6 = require('./images/trainer6.jpg')
+const Trainer1 = require('../Assets/images/trainer1.jpg')
+const Trainer2 = require('../Assets/images/trainer2.jpg')
+const Trainer3 = require('../Assets/images/trainer3.jpg')
+const Trainer4 = require('../Assets/images/trainer4.jpg')
+const Trainer5 = require('../Assets/images/trainer5.jpg')
+const Trainer6 = require('../Assets/images/trainer6.jpg')
 
 
 export const trainers = [
