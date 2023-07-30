@@ -22,13 +22,13 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav-container">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={() => {setIsActive(false)}}>
           <img src={Logo} alt="Nav Logo" />
         </Link>
         {ScreenWith < 1024 ? (
           <>
             {isActive ? (
-              <ul className="nav-links">
+              <ul className="nav-links" onClick={toggleNAvMenu}>
                 {links.map(({ name, path }, index) => {
                   return (
                     <li key={index}>
