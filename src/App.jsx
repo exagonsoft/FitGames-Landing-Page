@@ -15,13 +15,15 @@ class App extends Component {
       <>
         <BrowserRouter>
           <Navbar />
-          <Home />
-          <About />
-          <Galery />
-          <Trainers />
-          <Plans />
-          <Contacts />
-          <ErrorPage />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contacts />} />
+            <Route path="gallery" element={<Galery />} />
+            <Route path="plans" element={<Plans />} />
+            <Route path="trainers" element={<Trainers />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
         </BrowserRouter>
       </>
     );

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
-import Logo from "../../Assets/images/logo.png";
+import Logo from "../../Assets/images/fglogo.png";
 import { links } from "../../Data/data";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
+import { GetText } from "../../Languages/lang";
+import LangSelector from "../LanguageSelector/LangSelector";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = () => {
     <nav>
       <div className="container nav-container">
         <Link to="/" className="logo" onClick={() => {setIsActive(false)}}>
-          <img src={Logo} alt="Nav Logo" />
+          <img src={Logo} alt="Nav Logo" style={{width:"180px"}}/>
         </Link>
         {ScreenWith < 1024 ? (
           <>
@@ -38,7 +40,7 @@ const Navbar = () => {
                           isActive ? "nav-link-active" : ""
                         }
                       >
-                        {name}
+                        {GetText(name)}
                       </NavLink>
                     </li>
                   );
@@ -59,7 +61,7 @@ const Navbar = () => {
                       isActive ? "nav-link-active" : ""
                     }
                   >
-                    {name}
+                    {GetText(name)}
                   </NavLink>
                 </li>
               );
@@ -70,7 +72,9 @@ const Navbar = () => {
         <button onClick={toggleNAvMenu} className="nav-bar-toggle-btn">
           {!isActive ? <FaBars /> : <MdOutlineClose />}
         </button>
+        
       </div>
+      <LangSelector />
     </nav>
   );
 };

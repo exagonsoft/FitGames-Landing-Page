@@ -1,0 +1,40 @@
+.lang-selector{
+    position: absolute;
+    right: 40px;
+    top: calc(50% - 14px);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: rgb(20 20 20 / 58%);
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 1px 4px 5px #0c0b0bc4;
+    transition: all ease-in-out 0.7s;
+}
+
+.current-lang{
+    cursor: pointer;
+}
+
+.lang-buttons-containner{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+    height: 50px;
+    justify-content: flex-end;
+}
+
+.lang-wrapper{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .lang-selector{
+        right: 80px;
+    }
+}
