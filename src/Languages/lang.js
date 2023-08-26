@@ -14,6 +14,7 @@ const eng = {
     "Transform at our Fitness Club: Top-notch facilities, expert trainers, and a thriving community await. Start your journey to a better you today!",
   hero_link_button: "Get Started",
   programs_tittle: "Programs",
+  learnMore: "Learn More"
 };
 
 const des = {
@@ -29,6 +30,7 @@ const des = {
     "Verwandeln Sie sich in unserem Fitnessclub: Erstklassige Einrichtungen, erfahrene Trainer und eine lebendige Community erwarten Sie. Beginnen Sie noch heute Ihre Reise zu einem besseren Ich!",
   hero_link_button: "Loslegen",
   programs_tittle: "Programme",
+  learnMore: "Erfahren Sie mehr"
 };
 
 export const GetText = (field) => {

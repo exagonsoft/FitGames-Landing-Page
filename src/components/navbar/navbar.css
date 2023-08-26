@@ -3,6 +3,7 @@ nav {
   height: 5rem;
   width: 100vw;
   background-color: var(--color-primary);
+  box-shadow: var(--shadows);
   place-items: center;
   position: fixed;
   top: 0;
@@ -24,6 +25,7 @@ nav {
 
 .logo {
   width: 7rem;
+  display: block;
 }
 
 .nav-links {
@@ -38,6 +40,7 @@ nav {
 
 .nav-links a:hover {
   color: var(--color-secundary);
+  text-shadow: var(--shadows);
 }
 
 .nav-link-active {
@@ -52,8 +55,8 @@ nav {
   background: var(--color-primary);
   position: absolute;
   left: calc(50% - 0.6rem);
-  transform: rotate(45deg);
-  margin-top: 0.9rem !important;
+  transform: rotate(45deg) ;
+  margin-top: 0.96rem !important;
 }
 
 /* MEDIA QUERIES (medium and small) */

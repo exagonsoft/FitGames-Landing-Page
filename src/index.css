@@ -27,6 +27,8 @@
   --container-width-md: 90%;
 
   --transitions: all 500ms ease;
+  --shadows: 2px 5px 8px rgba(20, 20, 20, 0.75);
+  --glow: 0 0 14px 2px rgb(237 230 52 / 71%);
 }
 
 /*GENERAL STYLES*/
@@ -36,7 +38,82 @@ body {
   color: var(--color-gray-200);
   line-height: 1.7;
   overflow-x: hidden;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
   background-color: var(--color-gray-600);
+}
+
+/* Hide the scrollbar for all div elements */
+body::-webkit-scrollbar {
+  width: 0; /* Set a width for the invisible scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide the track */
+}
+
+section {
+  margin-top: 10rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-header > span {
+  background: var(--color-gray-500);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: var(--color-secundary);
+  font-size: 1.5rem;
+}
+
+.card {
+  background: var(--color-gray-500);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  box-shadow: var(--shadows);
+  transition: var(--transitions);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-gray-400);
+  cursor: default;
+}
+
+.card > span {
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-primary);
+  color: var(--color-gray-100);
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-right: auto;
+  border-radius: 1rem;
+  transition: var(--transitions);
+}
+
+.card:hover > span {
+  background: var(--color-secundary);
+  color: var(--color-gray-600);
+}
+
+.card > small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
 }
 
 .container {
@@ -54,25 +131,25 @@ h5 {
   color: var(--color-gray-100);
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-size: 2rem;
 }
 
-a{
+a {
   color: var(--color-gray-100);
 }
 
-img{
+img {
   display: block;
   object-fit: cover;
   width: 100%;
 }
 
-.btn{
+.btn {
   color: var(--color-gray-100);
   width: fit-content;
   margin: 0 auto;
@@ -82,18 +159,48 @@ img{
   transition: var(--transitions);
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--color-secundary);
   color: var(--color-gray-600);
+  box-shadow: var(--glow);
 }
 
-.btn.lg{
+.btn.lg {
   padding: 1.2rem 3rem;
   border-radius: 2rem;
   font-size: 1.1rem;
 }
 
-.btn.sm{
-  padding: .4rem 1.2rem;
-  font-size: .9rem;
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+/**************Media Queries (Medium Devices)****************/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+}
+
+/**************Media Queries (Small Devices)****************/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+
+  section{
+    margin-top: 8rem;
+  }
+
 }
