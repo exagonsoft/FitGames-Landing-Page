@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/images/fglogo.png";
 import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import "./footer.css"
 
 const Footer = () => {
   const actualYear = new Date().getFullYear(); 
@@ -9,7 +10,7 @@ const Footer = () => {
     <footer>
         <div className="container footer-container">
             <article>
-                <Link to="/" className="logo">
+                <Link to="/#" className="logo">
                   <img src={Logo} alt="logo" />
                 </Link>
                 <p>
@@ -22,15 +23,15 @@ const Footer = () => {
                     <a href='https://twitter.com/' target='_blank' rel='noreferrer noopener'>{<FaTwitter />}</a>
                 </div>
             </article>
-            <article>
+            <article className='footer-permalinks'>
                 <h4>Permalinks</h4>
-                <Link to='/about'>About</Link>
-                <Link to='/plans'>Plans</Link>
-                <Link to='/trainers'>Trainers</Link>
-                <Link to='/gallery'>Gallery</Link>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/about/#'>About</Link>
+                <Link to='/plans/#'>Plans</Link>
+                <Link to='/trainers/#'>Trainers</Link>
+                <Link to='/gallery/#'>Gallery</Link>
+                <Link to='/contact/#'>Contact</Link>
             </article>
-            <article>
+            <article className='footer-permalinks'>
                 <h4>Insights</h4>
                 <Link to='/s'>Blog</Link>
                 <Link to='/s'>Case Studies</Link>
@@ -38,7 +39,7 @@ const Footer = () => {
                 <Link to='/s'>Comunities</Link>
                 <Link to='/s'>FAQs</Link>
             </article>
-            <article>
+            <article className='footer-permalinks'>
                 <h4>Get  in Touch</h4>
                 <Link to='/contact'>Contact</Link>
                 <Link to='/s'>Support</Link>

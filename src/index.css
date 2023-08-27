@@ -40,7 +40,7 @@ body {
   overflow-x: hidden;
   scrollbar-width: none;
   scrollbar-color: transparent;
-  background-color: var(--color-gray-600);
+  background: var(--color-gray-600) url('./Assets/images/bg_texture.png');
 }
 
 /* Hide the scrollbar for all div elements */
@@ -176,6 +176,50 @@ img {
   font-size: 0.9rem;
 }
 
+
+.header{
+  margin-top: 5rem;
+  height: 20rem;
+  overflow: hidden;
+  border-bottom: 2px solid var(--color-gray-400);
+}
+
+.header-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: black;
+}
+
+.header-container-bg{
+  position: absolute;
+  width: 100%;
+}
+
+.header-container-bg > img{
+  opacity: 0.5;
+  height: fit-content;
+}
+
+.header-content{
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-gray-100);
+}
+
+.header-content > h2{
+  margin-bottom: 1rem;
+}
+
+.header-content > p{
+  color: rgba(250, 250, 250, 0.75);
+  margin-bottom: 0;
+}
+
 /**************Media Queries (Medium Devices)****************/
 @media screen and (max-width: 1024px) {
   .container {
@@ -189,6 +233,10 @@ img {
   h2 {
     font-size: 1.6rem;
   }
+
+  .header-content {
+    width: 75%;
+  }
   
 }
 
@@ -200,7 +248,24 @@ img {
   }
 
   section{
-    margin-top: 8rem;
+    margin-top: 7rem;
+  }
+
+  .header{
+    height: fit-content;
+  }
+
+  .header-container-bg > img {
+    min-height: 20rem;
+  }
+
+  .header-content{
+    width: var(--container-width-md);
+    padding: 3rem 0;
+  }
+
+  .header-content > p{
+    font-size: 0.85rem;
   }
 
 }

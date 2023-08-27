@@ -5,7 +5,7 @@ import Programs from "../../components/home/Programs";
 import Values from "../../components/home/Values";
 import FAQs from "../../components/home/FAQs";
 import Testimonials from "../../components/home/Testimonials";
-import Footer from "../../components/home/Footer";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -15,7 +15,6 @@ const Home = () => {
       <Values />
       <FAQs />
       <Testimonials />
-      <Footer />
     </div>
   );
 };

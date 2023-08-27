@@ -8,6 +8,7 @@ import Contacts from "./pages/contacts/Contacts";
 import ErrorPage from "./pages/error/ErrorPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="trainers" element={<Trainers />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </>
     );

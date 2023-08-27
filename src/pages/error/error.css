@@ -1,0 +1,9 @@
+.error-container{
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.error-container > .btn {
+    margin-top: 2rem;
+    display: inline-block;
+}

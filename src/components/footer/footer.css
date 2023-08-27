@@ -1,0 +1,109 @@
+footer {
+    background: var(--color-primary);
+    margin-top: 6rem;
+    padding-top: 6rem;
+    color: var(--color-gray-100);
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 6rem;
+  }
+  
+  .footer-container > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .footer-container > article > p {
+    margin-top: 0.5em;
+  }
+  
+  .footer-container > article > h4 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .footer-socials {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .footer-socials > a {
+    background: var(--color-gray-100);
+    padding: 0.6rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition: var(--transitions);
+  }
+
+  .footer-socials > a > svg {
+    color: var(--color-gray-600);
+  }
+  
+  .footer-socials > a:hover {
+    border-color: var(--color-gray-100);
+    background: transparent;
+    box-shadow: var(--glow);
+  }
+
+  .footer-permalinks > a {
+    transition: var(--transitions);
+  }
+
+  .footer-permalinks > a:hover{
+    color: var(--color-secundary);
+    text-shadow: var(--shadows);
+  }
+  
+  .footer-copyrights {
+    color: var(--color-gray-100);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-primary-variant);
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-copyrights > small {
+    font-weight: bold;
+  }
+
+/**************Media Queries (Medium Devices)****************/
+@media screen and (max-width: 1024px) {
+  
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/**************Media Queries (Small Devices)****************/
+@media screen and (max-width: 600px) {
+  .footer{
+    margin-top: 7rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-container > article {
+    align-items: center;
+  }
+
+  .footer-container > article > p {
+    text-align: center;
+  }
+
+  .footer-copyrights{
+    font-size: 1rem;
+  }
+}
