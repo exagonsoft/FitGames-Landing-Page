@@ -6,7 +6,7 @@ import { GetText } from "../../Languages/lang";
 const Header = () => {
   const inMobile = window.innerWidth <= 768 ? true : false;
   return (
-    <section className="hero-container">
+    <section id="home_header" className="hero-container">
       <div className="container hero-container-header">
         <div className="h-left">
           <h4>{GetText("hero_hastag")}</h4>

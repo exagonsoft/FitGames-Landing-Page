@@ -31,13 +31,11 @@ const Values = () => {
           <div className="values-wrapper">
             {values.map((_value) => {
               return (
-                <div key={_value.id}>
-                  <Card _class="value-card" _key={_value.id}>
-                    <span>{_value.icon}</span>
-                    <h4>{_value.title}</h4>
-                    <small>{_value.desc}</small>
-                  </Card>
-                </div>
+                <Card _class="value-card" key={_value.id}>
+                  <span>{_value.icon}</span>
+                  <h4>{_value.title}</h4>
+                  <small>{_value.desc}</small>
+                </Card>
               );
             })}
           </div>

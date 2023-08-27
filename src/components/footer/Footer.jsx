@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
         <div className="container footer-container">
             <article>
-                <Link to="/#" className="logo">
+                <Link to="/#home_header" className="logo">
                   <img src={Logo} alt="logo" />
                 </Link>
                 <p>
@@ -25,11 +25,11 @@ const Footer = () => {
             </article>
             <article className='footer-permalinks'>
                 <h4>Permalinks</h4>
-                <Link to='/about/#'>About</Link>
-                <Link to='/plans/#'>Plans</Link>
-                <Link to='/trainers/#'>Trainers</Link>
-                <Link to='/gallery/#'>Gallery</Link>
-                <Link to='/contact/#'>Contact</Link>
+                <Link to='/about/'>About</Link>
+                <Link to='/plans/'>Plans</Link>
+                <Link to='/trainers/'>Trainers</Link>
+                <Link to='/gallery/'>Gallery</Link>
+                <Link to='/contact/'>Contact</Link>
             </article>
             <article className='footer-permalinks'>
                 <h4>Insights</h4>

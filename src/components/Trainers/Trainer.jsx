@@ -2,9 +2,9 @@ import React from "react";
 import Card from "../../UI/Card";
 
 const Trainer = (props) => {
-  const { image, name, job, socials, _key } = props;
+  const { image, name, job, socials} = props;
   return (
-    <Card _key={_key} _class="trainer">
+    <Card _class="trainer">
       <div className="trainer-image">
         <img src={image} alt={name} />
       </div>

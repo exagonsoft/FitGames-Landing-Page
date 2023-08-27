@@ -9,7 +9,7 @@ const PlansSection = () => {
       <div className="container plans-container">
         {plans.map((_plan) => {
           return (
-            <Card _key={_plan.id} _class="plan">
+            <Card key={_plan.id} _class="plan">
               <h3>{_plan.name}</h3>
               <small>{_plan.desc}</small>
               <h1>{`$${_plan.price}`}</h1>

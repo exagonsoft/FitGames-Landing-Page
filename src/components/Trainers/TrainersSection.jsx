@@ -10,7 +10,7 @@ const TrainersSection = () => {
         {trainers.map((_trainer) => {
           return (
             <Trainer
-              _key={_trainer.id}
+              key={_trainer.id}
               name={_trainer.name}
               image={_trainer.image}
               job={_trainer.job}

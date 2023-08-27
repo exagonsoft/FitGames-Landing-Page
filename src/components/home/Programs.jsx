@@ -18,17 +18,15 @@ const Programs = () => {
         <div className="programs-wrapper">
           {programs.map((_program, index) => {
             return (
-              <div key={_program.id}>
-                <Card _class="programs-card" _key={_program.id}>
-                  <span>{_program.icon}</span>
-                  <h4>{_program.title}</h4>
-                  <small>{_program.info}</small>
-                  <Link to={_program.path} className="btn sm">
-                    {GetText("learnMore")}
-                    <AiFillCaretRight />
-                  </Link>
-                </Card>
-              </div>
+              <Card _class="programs-card" key={_program.id}>
+                <span>{_program.icon}</span>
+                <h4>{_program.title}</h4>
+                <small>{_program.info}</small>
+                <Link to={_program.path} className="btn sm">
+                  {GetText("learnMore")}
+                  <AiFillCaretRight />
+                </Link>
+              </Card>
             );
           })}
         </div>

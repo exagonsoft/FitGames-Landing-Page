@@ -9,8 +9,8 @@ const Galery = () => {
     <>
       <Header title="Our Gallery" image={HeaderImage}>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus,
-          ex?
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aut
+          consequatur illo reprehenderit mollitia natus.
         </p>
       </Header>
       <Gallery />

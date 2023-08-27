@@ -10,7 +10,7 @@ const Header = (props) => {
             </div>
             <div className="header-content">
                 <h2>{title}</h2>
-                <p>{children}</p>
+                <>{children}</>
             </div>
         </div>
     </header>
