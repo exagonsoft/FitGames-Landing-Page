@@ -33,6 +33,12 @@
     display: none;
 }
 
+@media screen and (max-width: 1024px) {
+    .lang-selector{
+        right: 100px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .lang-selector{
         right: 50px;

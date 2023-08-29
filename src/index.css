@@ -252,7 +252,7 @@ img {
   }
 
   .header{
-    height: fit-content;
+    height: 20rem;
   }
 
   .header-container-bg > img {
